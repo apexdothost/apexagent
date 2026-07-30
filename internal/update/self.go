@@ -161,7 +161,7 @@ func (u *Updater) detectUpdate(ctx context.Context) {
 		return
 	}
 
-	latest, found, err := updater.DetectLatest(ctx, selfupdate.NewRepositorySlug("danmartell-ventures", "apex-agent"))
+	latest, found, err := updater.DetectLatest(ctx, selfupdate.NewRepositorySlug("apexdothost", "apexagent"))
 	if err != nil {
 		u.log.Error("update check failed", "error", err)
 		return

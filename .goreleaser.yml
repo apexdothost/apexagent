@@ -34,7 +34,7 @@ checksum:
 
 release:
   github:
-    owner: danmartell-ventures
+    owner: apexdothost
     name: apexagent
   draft: false
   prerelease: auto
@@ -43,7 +43,7 @@ release:
 brews:
   - name: apex-agent
     repository:
-      owner: danmartell-ventures
+      owner: apexdothost
       name: homebrew-tap
     homepage: https://apex.host
     description: "Apex Agent — unified daemon for BYOH Mac hosts"
