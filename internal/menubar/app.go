@@ -7,9 +7,9 @@ import (
 
 	"github.com/energye/systray"
 
-	"github.com/danmartell-ventures/apexagent/internal/container"
-	"github.com/danmartell-ventures/apexagent/internal/tunnel"
-	"github.com/danmartell-ventures/apexagent/pkg/version"
+	"github.com/apexdothost/apexagent/internal/container"
+	"github.com/apexdothost/apexagent/internal/tunnel"
+	"github.com/apexdothost/apexagent/pkg/version"
 )
 
 // StatusProvider supplies current agent state to the menubar.
