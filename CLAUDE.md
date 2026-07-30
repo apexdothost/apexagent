@@ -27,7 +27,7 @@ Releases are distributed as **signed and notarized macOS PKG installers** via Gi
 1. Commit to `main`, push
 2. `git tag v0.2.7 && git push origin v0.2.7`
 3. GitHub Actions builds, codesigns, notarizes, and uploads `ApexAgent-{version}.pkg`
-4. Download PKG from https://github.com/danmartell-ventures/apexagent/releases
+4. Download PKG from https://github.com/apexdothost/apexagent/releases
 
 **Do NOT create pull requests.** Commit directly to main and tag.
 
@@ -71,7 +71,7 @@ Releases are distributed as **signed and notarized macOS PKG installers** via Gi
 
 ## Known Issues
 
-- **Homebrew tap push:** GoReleaser fails to push to `danmartell-ventures/homebrew-tap` (403). `continue-on-error: true` on the GoReleaser step so PKG build still runs. Fix by giving `HOMEBREW_TAP_GITHUB_TOKEN` write access to that repo.
-- **Go module rename:** Module was renamed from `github.com/danmartell-ventures/apex-agent` to `github.com/danmartell-ventures/apexagent`. The `.goreleaser.yml` release target must match the repo name.
+- **Homebrew tap push:** GoReleaser fails to push to `apexdothost/homebrew-tap` (403). `continue-on-error: true` on the GoReleaser step so PKG build still runs. Fix by giving `HOMEBREW_TAP_GITHUB_TOKEN` write access to that repo.
+- **Go module rename:** Module was renamed from `github.com/apexdothost/apex-agent` to `github.com/apexdothost/apexagent`. The `.goreleaser.yml` release target must match the repo name.
 - **PKG codesign in CI:** The binary MUST be signed AFTER copying to `pkg-root/` — `cp` strips codesign signatures. The CI workflow mirrors the `make pkg` target exactly for this reason. Do not refactor one without the other.
 - **Installer background image:** Removed. The macOS installer `<background>` element doesn't render well. Don't add it back.
