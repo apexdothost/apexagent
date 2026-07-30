@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/danmartell-ventures/apexagent/internal/container"
-	"github.com/danmartell-ventures/apexagent/internal/introspect"
-	"github.com/danmartell-ventures/apexagent/pkg/version"
+	"github.com/apexdothost/apexagent/internal/container"
+	"github.com/apexdothost/apexagent/internal/introspect"
+	"github.com/apexdothost/apexagent/pkg/version"
 )
 
 // HostInfo matches the shell script's "host" object.

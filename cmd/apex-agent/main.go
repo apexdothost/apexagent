@@ -16,12 +16,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/danmartell-ventures/apexagent/internal/agent"
-	"github.com/danmartell-ventures/apexagent/internal/config"
-	"github.com/danmartell-ventures/apexagent/internal/logging"
-	"github.com/danmartell-ventures/apexagent/internal/platform"
-	"github.com/danmartell-ventures/apexagent/internal/update"
-	"github.com/danmartell-ventures/apexagent/pkg/version"
+	"github.com/apexdothost/apexagent/internal/agent"
+	"github.com/apexdothost/apexagent/internal/config"
+	"github.com/apexdothost/apexagent/internal/logging"
+	"github.com/apexdothost/apexagent/internal/platform"
+	"github.com/apexdothost/apexagent/internal/update"
+	"github.com/apexdothost/apexagent/pkg/version"
 )
 
 var cfgPath string
